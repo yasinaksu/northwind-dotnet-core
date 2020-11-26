@@ -18,32 +18,32 @@ namespace Business.Concrete
 
         public void Add(Product product)
         {
-            throw new NotImplementedException();
+            _productDal.Add(product);
         }
 
         public void Delete(Product product)
         {
-            throw new NotImplementedException();
+            _productDal.Delete(product);
         }
 
         public Product GetById(int productId)
         {
-            throw new NotImplementedException();
+            return _productDal.Get(x => x.ProductId == productId);
         }
 
         public IList<Product> GetList()
         {
-            throw new NotImplementedException();
+            return _productDal.GetList();
         }
 
         public IList<Product> GetListByCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            return _productDal.GetList(x => x.CategoryId == categoryId);
         }
 
         public void Update(Product product)
         {
-            throw new NotImplementedException();
+            _productDal.Update(product);
         }
     }
 }
