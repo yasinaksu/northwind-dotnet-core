@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -21,13 +22,13 @@ namespace Business.Concrete
         public IResult Add(Product product)
         {
             _productDal.Add(product);
-            return new SuccessResult("Ürün başarıyla eklendi");
+            return new SuccessResult(Messages.ProductAdded);
         }
 
         public IResult Delete(Product product)
         {
             _productDal.Delete(product);
-            return new SuccessResult("Ürün başarıyla silindi");
+            return new SuccessResult(Messages.ProductDeleted);
         }
 
         public IDataResult<Product> GetById(int productId)
@@ -48,7 +49,7 @@ namespace Business.Concrete
         public IResult Update(Product product)
         {
             _productDal.Update(product);
-            return new SuccessResult("Ürün başarıyla güncellendi");
+            return new SuccessResult(Messages.ProductUpdated);
         }
     }
 }
