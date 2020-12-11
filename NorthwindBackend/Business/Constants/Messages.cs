@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,5 +14,10 @@ namespace Business.Constants
         public static string CategoryAdded = "Category başarıyla eklendi";
         public static string CategoryUpdated = "Category başarıyla güncellendi";
         public static string CategoryDeleted = "Category başarıyla silindi";
+
+        public static string UserNotFound = "Kullanıcı bulunamadı";
+        public static string PasswordError="Şifre hatalı";
+        public static string SuccessfulLogin="Kullanıcı başarıyla giriş yaptı";
+        public static string UserAlreadyExist = "Bu kullanıcı zaten mevcut";
     }
 }
