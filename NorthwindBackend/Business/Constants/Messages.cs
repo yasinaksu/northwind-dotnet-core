@@ -19,5 +19,7 @@ namespace Business.Constants
         public static string PasswordError="Şifre hatalı";
         public static string SuccessfulLogin="Kullanıcı başarıyla giriş yaptı";
         public static string UserAlreadyExist = "Bu kullanıcı zaten mevcut";
+        public static string UserRegistered="Kullanıcı başarıyla kaydedildi";
+        public static string AccessTokenCreated="Access Token başarıyla oluşturuldu";
     }
 }
