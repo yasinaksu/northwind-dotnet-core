@@ -43,7 +43,7 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(userExistResult.Message);
             }
-            var registerResult = _authService.Register(userForRegisterDto, userForRegisterDto.Password);
+            var registerResult = _authService.Register(userForRegisterDto);
             if (!registerResult.Success)
             {
                 return BadRequest(registerResult.Message);
